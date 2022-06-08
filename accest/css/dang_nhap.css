@@ -1,0 +1,93 @@
+body {
+    color: #757575;
+    background: #e6c19f;
+    font-family: 'open sans', sans-serif;
+}
+
+
+
+/*******************************/
+/********* Booking CSS *********/
+/*******************************/
+.booking {
+    padding-top:100px ;
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+}
+.booking .booking-content {
+    padding: 290px 0 110px 0;
+    background-image: url(../img/dki.jpg);
+} 
+
+/* .booking .booking-content .section-header {
+    margin-bottom: 30px;
+} */
+.booking-form h1{
+    color: #cd8624;
+    font-size: 34px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 7%;
+}
+.booking .booking-form {
+    padding: 36px 21px;
+    
+    background: #f5f3f0d1;
+}
+
+.booking .booking-form .control-group {
+    margin-bottom: 15px;
+}
+
+.booking .booking-form .input-group-text {
+    position: absolute;
+    padding: 0;
+    border: none;
+    background: none;
+    top: 15px;
+    right: 15px;
+    color: #c28b4f;
+    font-size: 14px;
+}
+
+.booking .booking-form .form-control {
+    height: 45px;
+    font-size: 14px;
+    color: #e58f0f;
+    padding: 0 15px;
+    border-radius: 5px !important;
+    border: 1px solid #9a8674d6;
+    background: transparent;
+}
+
+
+.booking .booking-form .form-control::placeholder {
+    color: #cd8624;
+    opacity: 1;
+}
+
+
+.booking .booking-form .btn.custom-btn {
+    width: 100%;
+    color: #fbaf32;
+    background: #ffffffd2;
+    border: 1px solid #ffffff;
+}
+
+.booking .booking-form .btn.custom-btn:hover {
+    color: #fff;
+   
+    background: #cd8624;
+}
+.booking .booking-form .capsont {
+    margin-top: 5%;
+    text-align: center;
+    font-size: 14px;
+}
+.col-lg-5{
+    padding: 0;
+}
+.col-lg-7{
+    padding: 0;
+}

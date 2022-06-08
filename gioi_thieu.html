@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cửa hàng</title>
+    <link rel="stylesheet" href="accest/css/cua_hang.css">
+    <script src="./accest/js/index.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Roboto light 300 -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!--Roboto light 300 italic-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <!--imperial Script -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap" rel="stylesheet">
+    <!--icon-->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="css_all_page.css">
+    <link rel="stylesheet" href="./accest/css/gioi_thieu.css">
+
+</head>
+
+
+<body>
+    <div class="screen"></div>
+    <div class="menu">
+        <div class="logo">
+            <img src="./accest/img/logo1.png" alt="">
+        </div>
+        <header>
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="gioi_thieu.html">Giới thiệu</a></li>
+                <li><a href="">Đặt bàn</a></li>
+                <li><a href="cua_hang.html">Cửa hàng</a></li>
+                <li><a href="">Liên hệ</a></li>
+            </ul>
+        </header>
+        <div class="menu_icon">
+            <a href=""><i class='bx bxs-cart'></i></a>
+            <a href=""><i class='bx bx-search'></i></a>
+            <a href="dang_nhap.html"><i class='bx bxs-user'></i></a>
+        </div>
+    </div>
+    <div class="info" id="info">
+        <marquee behavior="" direction="">
+            <p>Chào mừng quý khách đến với Chill Coffee. Chúc quý khách có một ngày tốt lành....</p>
+        </marquee>
+    </div>
+    <div class="title">
+
+        <h1>Giới thiệu</h1> <br>
+    </div>
+    <div class="banner">
+        <div class="title_banner">
+            <img src="accest/img/11.jpg" alt="" id="image">
+            <div class="text_box">
+                <h1>
+                    <div
+                        style="font-size: 30px; font-family: 'Alegreya', serif;font-weight: 200; text-transform: capitalize;">
+                        Cho tôi</div> một tách cà phê sữa đá
+                    <span> </span>
+                </h1>
+            </div>
+        </div>
+    </div>
+    <script>
+        const images = [
+            // "accest/img/11.jpg",
+            "accest/img/12.jpg",
+            "accest/img/13.jpg"
+        ]
+        const imaged = document.getElementById("image");
+        let index = 0;
+        setInterval(() => {
+            if (index == 0) {
+                imaged.src = images[1];
+                index++;
+            } else {
+                imaged.src = images[0];
+                index--;
+            }
+        }, 1000);
+    </script>
+
+
+    <div class="content">
+        <div class="nd">
+            <p> "Đi cà phê" từ lâu không đơn thuần chỉ là uống một tách cà phê mà còn là dịp gặp mặt và trò chuyện cùng
+                bạn
+                bè. Tại Coffee Và Bạn, chúng tôi trân trọng và đề cao giá trị kết nối giữa con người và trải nghiệm của
+                khách hàng. <br> <br>
+
+                Tại Coffee Và Bạn, nguyên liệu làm ra cà phê và tất cả các loại thức uống đều được chọn lọc từ những
+                nguồn
+                cung ứng được kiểm định gắt gao, đáp ứng tiêu chuẩn chất lượng cao nhất. Và một “nguyên liệu” quan trọng
+                hơn
+                hết chúng tôi đưa vào từng sản phẩm là sự tâm huyết của cả đội ngũ nhân viên Coffee Và Bạn.
+                Niềm đam mê với hương vị, sự nhiệt thành khi phục vụ, kĩ năng pha chế được đào tạo chuyên sâu là tất cả
+                những gì Coffee Và Bạn cam kết khi phục vụ bất kì sản phẩm nào cho khách hàng nhằm tạo ra trải nghiệm
+                “đi cà
+                phê” tốt nhất cho bạn. <br> <br>
+            </p>
+
+        </div>
+        <div class="video">
+            <div class="audio">
+                <i class='bx bxs-caret-right-circle' onclick="start_video()" id="butun"></i>
+                <video src="./accest/img/video.mp4" id="vd" autoplay></video>
+                <i class='bx bx-x-circle' id="off" onclick="of_video()"></i>
+            </div>
+
+
+        </div>
+        <script>
+            let butun = document.getElementById("butun");
+            let vd = document.getElementById("vd");
+
+            function start_video() {
+                vd.style = `display: block; width: 100%; height:100%; `;
+                butun.style = `display: none; `;
+                document.getElementById("off").style = `display: block;
+                position: absolute;
+                bottom: -170px;
+                right: 500px;
+                font-size: 40px;
+                transition: 0.5s;
+                `;
+            }
+
+            function of_video() {
+                vd.style = `display: none;`;
+                butun.style = `display: block; 
+                font-size: 60px;
+                color: rgba(216, 213, 213, 0.755);
+                transition: 0.5s;
+                `;
+                document.getElementById("off").style = `display: none;`;
+
+
+            }
+        </script>
+    </div>
+    <div class="erdow">
+        <div class="erdow_image">
+            <img src="./accest/img/ly_hoan_chinh.png" alt="">
+
+        </div>
+        <div class="erdow_text">
+            <h1>"COFFEE WITH ME"</h1>
+            <h1>CỬA HÀNG CÀ PHÊ PREMIUM</h1> <br>
+            <p>Cà phê không phải là thú thanh thản như trà, càng không mạnh mẽ bạo liệt như rượu. Người thưởng thức nhẹ
+                nhàng cho rằng cà phê là gạch nối giữa niềm vui và nỗi buồn. Với ai đang muộn phiền, cà phê càng day dứt
+                như một bản nhạc có nhiều dấu lặng.
+                Còn những kẻ môn đồ của giáo phái cà phê thì cho đó là người đàn bà mang bùa ngải trong mình....</p>
+
+        </div>
+    </div>
+    <div class="freeship">
+        <div class="freeship_text">
+            <h2>Gọi điện giao hàng tận nơi</h2> <br>
+            <div id="phone_number" style="display: flex; position: relative; right: 50px;"><i
+                    class='bx bxs-phone-call'></i>
+                <p>0975 383 290</p>
+            </div>
+        </div>
+        <div class="freeship_image">
+            <img src="./accest/img/shipper.webp" alt="">
+        </div>
+    </div>
+    <div class="go_menu">
+        <a href="#info" class="load-more-btn"><i class='bx bx-up-arrow-alt'></i></a>
+    </div>
+    <footer>
+        <p>@Bản quyền thuộc về Chill Coffee. Cung cấp bởi Hà Nga</p>
+    </footer>
+</body>
+
+
+</html>

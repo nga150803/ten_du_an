@@ -1,0 +1,478 @@
+:root {
+  --trangchu_menu-color: rgb(54, 46, 41, 0.6);
+  --trangcon_menu-color: rgb(70, 64, 60, 0.93);
+  --maquee--color: #bd7736;
+  --title--color: #885c34;
+  --backround_dky--color: #bc946f;
+  --footer-color: #c4c4c4;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: inherit;
+}
+html {
+  scroll-behavior: smooth;
+}
+.container {
+  width: 100%;
+  margin: auto;
+}
+html {
+  font-family: "Imperial Script", cursive;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.25;
+  box-sizing: border-box;
+}
+a {
+  outline: 0;
+  text-decoration: none;
+}
+a:hover {
+  color: inherit;
+}
+li {
+  list-style: none;
+}
+ul {
+  margin-top: -40px;
+  margin-left: 300px;
+}
+.anhlogo {
+  width: 80px;
+  height: 90px;
+  padding-top: 10px;
+  margin-left: 50px;
+}
+/*---------------------slide------------------*/
+.slide {
+  width: 100%;
+  height: 550px;
+  background-size: cover;
+}
+.slide img {
+  width: 100%;
+  height: 100%;
+}
+.dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dots .active {
+  background-color: #e15d46;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: #fff;
+  margin: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/*------------------header--------------------*/
+
+.navbar li {
+  color: #f1f1f1;
+  display: inline-block;
+  width: 130px;
+  height: 60px;
+  /* line-height: 40px; */
+  /* margin-left: 100px; */
+  /* padding-left: 50px; */
+}
+
+.navbar {
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 4vw;
+  transition: all 0.3s ease;
+  background-color: var(--trangchu_menu-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar_item {
+  width: 100%;
+  padding: 32px;
+  color: #fff;
+}
+.navbar_link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  /* padding: 1.5rem 2rem; */
+  /* text-transform: uppercase; */
+  color: #fff;
+
+  transition: all 0.3s ease;
+}
+.navbar_icon {
+  color: #fff;
+  padding: 24px;
+  font-size: 24px;
+}
+
+.logo_ndung {
+  width: 7%;
+  margin-left: 705px;
+  margin-top: 50px;
+}
+/**
+-----------------------------------------------
+*/
+.tieudechinh {
+  font-weight: 500;
+  font-size: 30px;
+  color: var(--maquee--color);
+  text-align: center;
+  margin-top: 30px;
+}
+.tieudephu {
+  font-family: "Imperial Script", cursive;
+  font-size: 90px;
+  text-align: center;
+  color: var(--title--color);
+}
+
+/*San pham*/
+.hangsanpham {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  /* width: 100%;
+  justify-content:left; */
+  margin-left: 90px;
+}
+.noidung img {
+  height: 100px;
+  width: 100px;
+}
+.nut_mua_ngay {
+  transition: 0.5s;
+}
+.nut_mua_ngay:hover {
+  background: rgb(222, 16, 16);
+  color: white;
+}
+.noidung1 {
+  text-decoration: none;
+  color: #000;
+  display: block;
+  width: 21%;
+  overflow: hidden;
+  margin: 20px;
+  background-color: #fff;
+  position: relative;
+  transition: 0.5s;
+  border-radius: 5px;
+  /* border: 1px solid gray; */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.noidung1:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.noidung1-img {
+  width: 100%;
+  padding-top: 80%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.gia_san_pham {
+  color: rgb(216, 67, 67);
+  margin-left: 20px;
+  font-size: 20px;
+  font-weight: 400;
+}
+.ten_san_pham {
+  margin-left: 20px;
+  font-size: 22px;
+  margin-top: 10px;
+  font-weight: 400;
+  margin-bottom: 25px;
+  color: #636262;
+}
+.nut_lien_he {
+  background-color: #664545;
+  color: #fff;
+  line-height: 40px;
+  text-align: center;
+  margin-right: 150px;
+  border-bottom-left-radius: 5px;
+}
+.nut_mua_ngay {
+  background-color: #bf6d21;
+  color: #fff;
+  line-height: 40px;
+  margin-left: 145px;
+  margin-top: -40px;
+  text-align: center;
+  border-bottom-right-radius: 5px;
+}
+/***********************************phan gần đuôi**************/
+.ma_qr {
+  width: 100%;
+  height: 400px;
+  background-color: #5b4a42;
+  margin-top: 50px;
+}
+.anh_ben_qr {
+  width: 70=50px;
+  margin-left: 90px;
+  margin-bottom: 100px;
+}
+.anh_ma_qr {
+  margin: 100px;
+  margin-left: 180px;
+  width: 320px;
+}
+.cam_nhan {
+  background: url(../img/nen_.webp) center bottom no-repeat;
+  background-size: cover;
+  height: 700px;
+}
+.logo_ndung img {
+  height: 100px;
+  width: 100px;
+  -webkit-transition: all 2s ease;
+  -moz-transition: all 2s ease;
+  -ms-transition: all 2s ease;
+  transition: all 2s ease;
+}
+.logo_ndung img:hover {
+  transform: scale(1.5);
+}
+.anh_camnhan {
+  margin-left: 140px;
+  margin-top: 50px;
+  width: 1300px;
+}
+/**==============================footer===========================*/
+.footer {
+  text-align: center;
+  height: 100px;
+  line-height: 100px;
+  font-size: 20px;
+  background-color: var(--footer-color);
+  color: #885c34;
+}
+#nga {
+  display: none;
+}
+/**==========================*/
+.load-more {
+  margin-top: -60px;
+  transform: translate(0, 30px);
+}
+.menu_child {
+  display: none;
+}
+.load-more-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  background-color: #766449;
+  margin-left: 700px;
+  border-radius: 50%;
+}
+.bx-up-arrow-alt {
+  color: #fff;
+  font-size: 40px;
+}
+.menu_mobile {
+  display: none;
+}
+/**********************************************/
+.maqr_mobile {
+  display: none;
+}
+
+/*điện thoại*/
+#toggle {
+  display: none;
+  color: #fff;
+  font-size: 24px;
+}
+@media only screen and (max-width: 46.1875em) {
+  .container {
+    width: 100%;
+    height: 100%;
+  }
+  .slide {
+    width: 100%;
+    height: 300px;
+  }
+  .slide img {
+    width: 100%;
+    height: 300px;
+  }
+  .dots {
+    position: relative;
+    top: 20px;
+  }
+  .navbar {
+    display: none;
+  }
+  .menu_mobile {
+    display: block;
+    width: 100%;
+    height: 70px;
+    background: var(--trangchu_menu-color);
+    position: fixed;
+    top: 0;
+    z-index: 1;
+  }
+  .logo_ndung {
+    margin-left: 150px;
+    margin-top: 70px;
+    border-radius: 2px;
+  }
+  .tieudechinh {
+    display: none;
+  }
+  .tieudephu {
+    margin-top: 10px;
+  }
+  .noidung1 {
+    width: 100%;
+    position: relative;
+    right: 35px;
+    height: 320px;
+  }
+  .noidung1:hover {
+    transform: translateY(0px);
+  }
+  .nut_lien_he {
+    display: none;
+  }
+  .nut_mua_ngay {
+    position: relative;
+    top: 15px;
+    width: 100%;
+    left: -145px;
+  }
+  .gia_san_pham,
+  .ten_san_pham {
+    position: relative;
+    top: -15px;
+  }
+  .ma_qr {
+    background-size: cover;
+  }
+  .ma_qr {
+    display: none;
+  }
+  .maqr_mobile {
+    display: block;
+    width: 100%;
+    height: 300px;
+    background: #5b4a42;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .maqr_mobile .anh_dong_ho {
+    width: 40%;
+  }
+  .maqr_mobile .chu_dong_ho {
+    width: 60%;
+  }
+  #xxxx {
+    display: none;
+  }
+  .anh_camnhan {
+    display: none;
+  }
+  #nga {
+    display: block;
+    width: 100%;
+    position: relative;
+    top: 0px;
+  }
+  .footer {
+    position: relative;
+    top: 80px;
+    font-size: 14px;
+  }
+  .cam_nhan {
+    background: none;
+    height: 400px;
+  }
+  .load-more {
+    position: relative;
+    right: 530px;
+    top: 80px;
+    z-index: 2;
+  }
+  .menu_mobile img {
+    width: 18%;
+    position: relative;
+    left: 10px;
+  }
+  .menu_mobile i {
+    color: #fff;
+    font-size: 30px;
+    position: relative;
+    right: 10px;
+  }
+  .menu_mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .menu_mobile i:hover .menu_child {
+    display: block;
+  }
+  .menu_child {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #e3caa5;
+    z-index: 1;
+  }
+  .menu_child ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+    position: relative;
+    left: -260px;
+    top: -100px;
+  }
+}
+.menu_child ul li {
+  width: 100%;
+  height: 50px;
+  background: #ad8b73;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 2px 10px rgba(255, 1, 1, 0.4);
+}
+.menu_child ul li a {
+  text-transform: uppercase;
+  color: #fff;
+}
+
+/**tablet*****/
+@media screen and (max-width: 768px) {
+}

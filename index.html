@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Chủ</title>
+    <link rel="stylesheet" href="accest/css/index.css">
+    <script src="./accest/js/index.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Roboto light 300 -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!--Roboto light 300 italic-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <!--imperial Script -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap" rel="stylesheet">
+    <!--icon-->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</head>
+
+
+<body>
+    <div class="menu_child" id="xl_menu">
+        <i class='bx bx-x' style="color: #fff; font-size: 50px;" id="x" onclick="checkout()"></i>
+        <ul>
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="gioi_thieu.html">Giới thiệu</a></li>
+            <li><a href="">Đặt bàn</a></li>
+            <li><a href="cua_hang.html">Cửa hàng</a></li>
+            <li><a href="">Liên hệ</a></li>
+
+        </ul>
+    </div>
+    <div class="container">
+        <div class="slide" id="slide">
+            <img src="image/0.png" alt="" id="anh">
+            <div class="dots" id="dot">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+        <header>
+            <nav class="navbar" id="nav">
+                <div class="navbar_logo">
+                    <img class="anhlogo" src="./accest/img/logo1.png" alt="">
+                </div>
+                <div id="toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+                <div id="main-menu" class="navbar_list">
+                    <a class="navbar_item" href="index.html">Trang chủ</a>
+                    <a class="navbar_item" href="gioi_thieu.html">Giới thiệu</a>
+                    <a class="navbar_item" href="">Đặt bàn</a>
+                    <a class="navbar_item" href="cua_hang.html">Cửa hàng</a>
+                    <a class="navbar_item" href="">Liên hệ</a>
+                </div>
+
+                <div>
+                    <a href="" class="navbar_icon"><i class='bx bxs-cart'></i></a>
+                    <a href="" class="navbar_icon"><i class='bx bx-search'></i></a>
+                    <a href="dang_nhap1.html" class="navbar_icon"><i class='bx bxs-user'></i></a>
+                </div>
+            </nav>
+        </header>
+        <div class="menu_mobile" id="sl">
+            <img src="./accest/img/logo1.png" alt="">
+            <i class='bx bx-menu' id="cc" onclick="check()"></i>
+
+
+        </div>
+        <script>
+            var xl_menu = document.getElementById("xl_menu");
+            var cc = document.getElementById("cc");
+
+            function check() {
+                xl_menu.style = `display : block;`;
+                document.getElementById("sl").style = `display : none;`;
+                document.getElementById("dot").style = `display : none;`;
+            }
+
+            function checkout() {
+                xl_menu.style = `display : none;`;
+                document.getElementById("sl").style = `display : block;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                    height: 70px;
+                    background: var(--trangchu_menu-color);
+                    position: fixed;
+                    top: 0;
+                    z-index: 1;
+                `;
+                document.getElementById("dot").style = `display : block;`;
+            }
+        </script>
+        <!---------------------------------------nội dung-------------------------------->
+
+        <div class="noidung">
+            <img class="logo_ndung" src="./accest/img/nen_nha.PNG" alt="">
+            <p class="tieudechinh">- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Coffee with me
+                - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</p>
+            <p class="tieudephu">Menu</p> <br>
+        </div>
+        <div class="hangsanpham">
+            <a class="noidung1" href="">
+                <div class="noidung1-img" style="background-image: url(./accest/img/cappuccino\ 1.png);">
+                </div>
+                <p class="gia_san_pham">45.000<sup><u>đ</u></sup></p>
+                <p class="ten_san_pham">Cappuccino</p>
+                <div class="nut_mua">
+                    <p class="nut_lien_he">Chi tiết</p>
+                    <p class="nut_mua_ngay">Mua ngay</p>
+                </div>
+            </a>
+
+            <a class="noidung1" href="">
+                <div class="noidung1-img" style="background-image: url(./accest/img/ca_cao_nong\ \(1\).png);">
+                </div>
+                <p class="gia_san_pham">35.000<sup><u>đ</u></sup></p>
+                <p class="ten_san_pham">Ca cao nóng</p>
+                <div class="nut_mua">
+                    <p class="nut_lien_he">Chi tiết</p>
+                    <p class="nut_mua_ngay">Mua ngay</p>
+                </div>
+            </a>
+
+
+            <a class="noidung1" href="">
+                <div class="noidung1-img" style="background-image: url(./accest/img/caphesuatuoi\ 1.png);">
+                </div>
+                <p class="gia_san_pham">55.000<sup><u>đ</u></sup></p>
+                <p class="ten_san_pham">Cà phê sữa tươi</p>
+                <div class="nut_mua">
+                    <p class="nut_lien_he">Chi tiết</p>
+                    <p class="nut_mua_ngay">Mua ngay</p>
+                </div>
+            </a>
+
+            <a class="noidung1" href="">
+                <div class="noidung1-img" style="background-image: url(./accest/img/cafe_nguyen_chat.png);">
+                </div>
+                <p class="gia_san_pham">30.000<sup><u>đ</u></sup></p>
+                <p class="ten_san_pham">Cà phê nguyên chất</p>
+                <div class="nut_mua">
+                    <p class="nut_lien_he">Chi tiết</p>
+                    <p class="nut_mua_ngay">Mua ngay</p>
+                </div>
+            </a>
+            <a class="noidung1" href="">
+                <div class="noidung1-img" style="background-image: url(./accest/img/caphe_sua_bot.png);">
+                </div>
+                <p class="gia_san_pham">40.000<sup><u>đ</u></sup></p>
+                <p class="ten_san_pham">Cà phê sữa bọt</p>
+                <div class="nut_mua">
+                    <p class="nut_lien_he">Chi tiết</p>
+                    <p class="nut_mua_ngay">Mua ngay</p>
+                </div>
+            </a>
+
+            <a class="noidung1" href="">
+                <div class="noidung1-img" style="background-image: url(./accest/img/caphe_sua_nong\ 1.png);">
+                </div>
+                <p class="gia_san_pham">30.000<sup><u>đ</u></sup></p>
+                <p class="ten_san_pham">Cà phê sữa nóng</p>
+                <div class="nut_mua">
+                    <p class="nut_lien_he">Chi tiết</p>
+                    <p class="nut_mua_ngay">Mua ngay</p>
+                </div>
+            </a>
+
+
+            <a class="noidung1" href="">
+                <div class="noidung1-img" style="background-image: url(./accest/img/cappuccino\ 1.png);">
+                </div>
+                <p class="gia_san_pham">55.000<sup><u>đ</u></sup></p>
+                <p class="ten_san_pham">Cappuccino</p>
+                <div class="nut_mua">
+                    <p class="nut_lien_he">Chi tiết</p>
+                    <p class="nut_mua_ngay">Mua ngay</p>
+                </div>
+            </a>
+
+            <a class="noidung1" href="">
+                <div class="noidung1-img" style="background-image: url(./accest/img/caphesuatuoi\ 1.png);">
+                </div>
+                <p class="gia_san_pham">30.000<sup><u>đ</u></sup></p>
+                <p class="ten_san_pham">Cà phê sữa tươi</p>
+                <div class="nut_mua">
+                    <p class="nut_lien_he">Chi tiết</p>
+                    <p class="nut_mua_ngay">Mua ngay</p>
+                </div>
+            </a>
+        </div>
+
+        <!-------------------------phần liên hệ và cảm nhận------------------------>
+        <div class="ma_qr">
+            <img class="anh_ben_qr" src="./accest/img/anh_ben_qr.png" alt="">
+            <img class="anh_ma_qr" src="./accest/img/ma_qr.PNG" alt="">
+        </div>
+        <div class="maqr_mobile">
+            <img src="./accest/img/dong-ho.png" alt="" class="anh_dong_ho">
+            <img src="./accest/img/chu_ben_dong_ho.png" alt="" class="chu_dong_ho">
+        </div>
+        <!------------------------------------phần cảm nhận khách hàng------------------------->
+        <div class="cam_nhan">
+            <img class="logo_ndung" id="xxxx" src="./accest/img/nen_nha.PNG" alt="">
+
+            <p class="tieudechinh">- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Cảm
+                nhận
+                - - - - -
+                - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</p>
+            <p class="tieudephu">Khách hàng</p> <br>
+            <img src="./accest/img/anh_be.png" alt="" id="nga">
+            <img class="anh_camnhan" src="./accest/img/Group 90.png" alt="">
+
+            <div class="load-more" onclick="movetop()">
+                <a href="#" class="load-more-btn"><i class='bx bx-up-arrow-alt'></i></a>
+            </div>
+            <footer class="footer">
+                <p>@Bản quyền thuộc về Chill Coffee. Cung cấp bởi Hà Nga</p>
+            </footer>
+        </div>
+    </div>
+</body>
+
+
+</html>

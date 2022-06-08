@@ -1,0 +1,230 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: rgb(82, 80, 80);
+}
+html {
+  scroll-behavior: smooth;
+}
+.screen {
+  width: 100%;
+  height: 100px;
+}
+.menu {
+  width: 100%;
+  height: 100px;
+  background: #46403c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  transition: all 0.3s ease;
+}
+.menu.scroll {
+  height: 60px;
+}
+
+.show-btn {
+  display: none;
+}
+
+.menu.scroll .logo {
+  transition: all 0.3s ease;
+  width: 15%;
+}
+
+.menu .logo {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu .logo img {
+  width: 30%;
+}
+header {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header li {
+  list-style: none;
+}
+header ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-family: roboto;
+  text-transform: capitalize;
+  margin-left: 50px;
+  color: #fff;
+  transition: 0.5s;
+}
+header ul li a:hover {
+  color: red;
+}
+.menu_icon {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu_icon i {
+  font-size: 30px;
+  margin-left: 30px;
+  color: #fff;
+  transition: 0.5s;
+}
+.menu_icon i:hover {
+  color: red;
+  transform: scale(1.1);
+}
+.info {
+  width: 100%;
+  height: 40px;
+  background: #bd7736;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.info p {
+  color: #fff;
+  font-size: 20px;
+}
+.go_menu {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.go_menu a {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #724c28;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  font-size: 40px;
+  position: relative;
+  top: -25px;
+}
+
+.close-btn {
+  display: none;
+}
+footer {
+  margin-top: -49px;
+  width: 100%;
+  height: 80px;
+  background: #c4c4c4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer p {
+  font-size: 22px;
+  color: #875400;
+}
+/**điện thoại*/
+@media only screen and (max-width: 46.1875em) {
+  .menu {
+    position: relative;
+    height: 50px;
+    justify-content: start;
+  }
+
+  .menu .logo img {
+    width: 50%;
+  }
+
+  header {
+    width: 0;
+  }
+
+  .menu_icon {
+    margin-left: 40%;
+  }
+
+  .nav {
+    position: fixed;
+    flex-direction: column;
+    justify-content: start;
+    padding-top: 150px;
+    top: 0px;
+    left: -120%;
+    width: 100vw;
+    height: 100vh;
+
+    background: #e3caa5;
+    transition: all 0.3s ease-in;
+  }
+
+  .nav.active {
+    left: 0;
+  }
+
+  .nav > li {
+    width: 90%;
+    margin-top: 18px;
+    max-width: 372px;
+    padding: 10px 0;
+    background: rgba(173, 139, 115, 0.9);
+    box-shadow: 0px 4px 4px #e2a1a1;
+  }
+
+  .nav > li a {
+    display: inline-block;
+    font-size: 20px;
+    line-height: 28px;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 0.5rem;
+    right: 2rem;
+    font-size: 40px;
+    color: #fff;
+    display: block;
+  }
+
+  .show-btn {
+    display: block;
+  }
+
+  .title_drink {
+    display: block !important;
+  }
+
+  .title_drink h1 {
+    position: initial !important;
+    text-align: center;
+  }
+
+  .screen {
+    display: none;
+  }
+
+  footer p {
+    font-size: 16px;
+  }
+}
